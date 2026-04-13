@@ -1,42 +1,37 @@
-# 🎙️ AI Meeting Assistant: Instant Notes, Zero Worries
+# 🎙️ AI Meeting Assistant — Speech-to-Text + IBM Watsonx
 
-![Python](https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge&logo=python)
-![IBM watsonx.ai](https://img.shields.io/badge/Powered%20By-IBM%20watsonx.ai-7D3CFF?style=for-the-badge)
-![Gradio](https://img.shields.io/badge/UI-Gradio-orange?style=for-the-badge)
+![Language](https://img.shields.io/badge/Language-Python%203.11-3776AB?style=flat-square&logo=python&logoColor=white)
+![LLM](https://img.shields.io/badge/LLM-IBM%20Granite%203.3%208B-052FAD?style=flat-square&logo=ibm&logoColor=white)
+![Speech](https://img.shields.io/badge/Speech-HuggingFace%20Transformers-FFD21E?style=flat-square)
+![UI](https://img.shields.io/badge/UI-Gradio-FF7C00?style=flat-square)
+![Focus](https://img.shields.io/badge/Focus-Speech%20AI%20%2B%20NLP-2E7D32?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)
 
-In today's fast-paced work environment, capturing every detail of a meeting manually is a challenge. This project provides an **AI-powered transformative solution** for meeting documentation by leveraging Large Language Models (LLMs) and Generative AI to automate note-taking and extract critical insights efficiently.
+## 📌 Project Overview
+AI-powered meeting assistant that transcribes audio recordings using HuggingFace speech-to-text pipeline and analyzes financial meeting transcripts using IBM Granite 3.3 8B via Watsonx.ai. Normalizes financial acronyms (401k → 401(k) Retirement Savings Plan, HSA, ROA, VaR) and generates structured summaries with a Gradio interface.
 
----
+**Domain:** Speech AI + Financial NLP  
+**LLM:** IBM Granite 3.3 8B Instruct (Watsonx)  
+**Speech Model:** HuggingFace Transformers pipeline  
+
+## 🛠️ Tech Stack
+| Component | Technology |
+|---|---|
+| LLM | IBM Granite 3.3 8B Instruct |
+| Platform | IBM Watsonx.ai |
+| Speech-to-Text | HuggingFace Transformers (torch) |
+| LangChain | WatsonxLLM + ChatPromptTemplate |
+| UI | Gradio |
 
 ## 🚀 Key Features
+- Audio → Text transcription using HuggingFace pipeline
+- Financial acronym normalization (401k, HSA, ROA, VaR, LTV)
+- LangChain LCEL chain for structured transcript analysis
+- Gradio UI with sample meeting WAV file included
 
-* **🎙️ Intelligent Transcription**: Uses **OpenAI Whisper** to convert audio speech from multiple formats into accurate text.
-* **🛠️ Text Preprocessing**: Automatically cleans transcripts by removing non-ASCII characters and correcting punctuation.
-* **🧠 Context-Aware Corrections**: Employs **Llama 3.2** as a product assistant to ensure technical and financial terminology is correctly formatted.
-* **📝 Automated Minutes**: Leverages **IBM Granite 3.0** via **LangChain** to generate structured meeting minutes and task lists.
-* **💻 Seamless UI**: A user-friendly web interface built with **Gradio** for easy audio uploads and one-click processing.
+## 🎓 Skills Demonstrated
+IBM Watsonx integration · HuggingFace speech pipeline · LangChain LCEL · Financial NLP · Gradio UI development
 
----
-
-## 🏗️ Technical Workflow
-
-The application follows a robust end-to-end pipeline:
-1.  **Audio Input**: Users upload a `.wav` or `.mp3` recording.
-2.  **Whisper Processing**: Converts the audio to a raw transcript.
-3.  **Refinement**: A specialized LLM assistant cleans the text and standardizes terms.
-4.  **Intelligence Layer**: A LangChain-driven prompt template instructs the LLM to identify key points and actionable items.
-5.  **Output**: The user receives a structured text report available for instant download.
-
----
-
-## 🛠️ Installation & Setup
-
-### Prerequisites
-* Python 3.10+
-* `ffmpeg` installed on your system
-
-### Setup Environment
-```bash
-pip3 install virtualenv
-virtualenv my_env
-source my_env/bin/activate
+## 🤝 Connect
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Leela%20A-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/leela-a)
+[![Gmail](https://img.shields.io/badge/Gmail-attotaleelaissak@gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:attotaleelaissak@gmail.com)
